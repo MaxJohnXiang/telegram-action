@@ -13,3 +13,4 @@ jobs:
           message: send photo message
           photo: tests/github.png
           document: tests/gophercolor.png
+          message_file: tests/message.txt
