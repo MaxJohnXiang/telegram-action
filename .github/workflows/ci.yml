@@ -1,18 +1,20 @@
 name: telegram message
 on: [push]
 jobs:
-
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@master
-    - name: send photo message
+--- 
+build: 
+  name: Build
+  runs-on: ubuntu-latest
+  steps: 
+    - 
+      uses: actions/checkout@master
+    - 
+      name: "send photo message"
       uses: appleboy/telegram-action@master
-      with:
+      with: 
+        document: tests/gophercolor.png
+        message: "send photo message"
+        photo: tests/github.png
         to: -633950651
-        token: 5469600328:AAECLnKW_YIlrBkT4fiUUE0b_snAcCU2NPw
-	message: send photo message
-	photo: tests/github.png
-	document: tests/gophercolor.png
+        token: "5469600328:AAECLnKW_YIlrBkT4fiUUE0b_snAcCU2NPw"
 
