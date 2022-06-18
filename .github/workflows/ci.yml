@@ -6,8 +6,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-    - uses: appleboy/telegram-action@master 
     - name: send custom message with args
+      uses: appleboy/telegram-action@master 
       with:
         to: -633950651
         token: 5469600328:AAECLnKW_YIlrBkT4fiUUE0b_snAcCU2NPw
