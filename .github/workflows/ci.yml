@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: send custom message with args
-      uses: ./
+    - name: send photo message
+      uses: appleboy/telegram-action@master
       with:
         to: -633950651
         token: 5469600328:AAECLnKW_YIlrBkT4fiUUE0b_snAcCU2NPw
-        message_file: tests/message.txt
+	message: send photo message
+	photo: tests/github.png
+	document: tests/gophercolor.png
 
